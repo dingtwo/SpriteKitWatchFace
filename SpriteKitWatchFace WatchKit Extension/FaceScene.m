@@ -88,7 +88,8 @@ CGFloat workingRadiusForFaceOfSizeWithAngle(CGSize faceSize, CGFloat angle)
 		self.useBackgroundImageOverlay = NO;
 		self.faceStyle = FaceStyleRound;
 		self.numeralStyle = NumeralStyleAll;
-		self.tickmarkStyle = TickmarkStyleAll;
+        // 刻度样式
+		self.tickmarkStyle = TickmarkStyleNone;
 		self.majorTickmarkShape = TickmarkShapeRectangular;
 		self.minorTickmarkShape = TickmarkShapeRectangular;
 		
@@ -96,9 +97,9 @@ CGFloat workingRadiusForFaceOfSizeWithAngle(CGSize faceSize, CGFloat angle)
 		self.majorTickWidth = 2;
 
 		self.colorRegionStyle = ColorRegionStyleDynamicDuo;
-		
+		// 周几的样式
 		self.dateStyle = DateStyleDayDate;
-		self.dateQuadrant = DateQuadrantRight;
+		self.dateQuadrant = DateQuadrantTop;
 
 		self.monogram = @""; // e.g. 
 		
